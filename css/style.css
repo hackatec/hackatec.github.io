@@ -1,10 +1,36 @@
+/* latin */
+@font-face {
+  font-family: 'DINPro-Light';
+  font-style: normal;
+  font-weight: 600;
+  src: local('DINPro-Light'), local('DINPro-Light'), url(../fonts/DINPro-Light.ttf) format('ttf');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'DINPro-Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('DINPro-Bold'), local('DINPro-Bold'), url(../fonts/DINPro-Bold.ttf) format('ttf');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'DINMedium';
+  font-style: normal;
+  font-weight: 600;
+  src: local('DINMedium'), local('DINMedium'), url(../fonts/DINMedium.ttf) format('ttf');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 body {
-	font-family: 'Dosis', sans-serif;
+	font-family: 'DINPro-Light', sans-serif;
     color: #404142;
     font-size: 16px;
 	letter-spacing: 0.8px;
 }
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'DINPro-Bold', sans-serif;
 	font-weight: 200;
 }
 ul {
@@ -152,8 +178,13 @@ a:hover, a:focus, a:active, a:visited {
 	margin-top: 30px;
 }
 .feature span {
-	font-size: 5em;
+    font-size: 5em;
     color: #016cc7;
+}
+
+#speakers{
+    background: #62A0B2;
+    color: #fff;
 }
 
 .speaker .feature {
@@ -161,9 +192,10 @@ a:hover, a:focus, a:active, a:visited {
 	-webkit-transition: all 0.3s;
   	-moz-transition: all 0.3s;
   	transition: all 0.3s;
-  	margin-right: 20px;
+  	/*margin-right: 20px;*/
   	border: 3px solid #f6f6f6;
     border-radius: 5px;
+    margin: 0 10px;
 }
 .speaker .feature:hover {
     box-shadow: 3px 3px 10px #ccc;
@@ -187,14 +219,17 @@ ul.speaker-social li a:hover {
 	text-decoration: none;
 }
 a span.ti-facebook {
-	color: #3b5998;
+	color: #fff;
 }
 a span.ti-twitter-alt {
-	color: #4099ff;
+    color: #fff;
+}
+a span.ti-linkedin {
+    color: #fff;
 }
 
 .tickets {
-	background-color: #fcd93b;
+	background-color: #EAEAEA;
 }
 .tickets .price {
 	font-size: 4em;
@@ -209,6 +244,11 @@ a span.ti-twitter-alt {
 .nav-tabs {
     margin-top: 20px;
 }
+#schedule{
+    background: #6B2D91;
+    color: #f9fd93;
+}
+
 .schedule .media {
 	margin-top: 4em;
 }
@@ -353,4 +393,24 @@ ul.footer-menu li a:hover {
         width: 49%;
         margin-right: 9px;
     }
+}
+ 
+/* more */
+
+.feature .more span {
+    font-size: 1em;
+    color: inherit;
+}
+
+a.morelink {
+    text-decoration:none;
+    outline: none;
+}
+.morecontent span {
+    display: none;
+}
+.comment {
+    width: 400px;
+    background-color: #f0f0f0;
+    margin: 10px;
 }
