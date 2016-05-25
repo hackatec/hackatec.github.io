@@ -4,6 +4,9 @@
   font-style: normal;
   font-weight: 600;
   src: local('DINPro-Light'), local('DINPro-Light'), url(../fonts/DINPro-Light.ttf) format('ttf');
+  src: local('DINPro-Light'), local('DINPro-Light'), url(../fonts/DINPro-Light.eot) format('eot');
+  src: local('DINPro-Light'), local('DINPro-Light'), url(../fonts/DINPro-Light.otf) format('otf');
+  src: local('DINPro-Light'), local('DINPro-Light'), url(../fonts/DINPro-Light.woff) format('woff');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -12,6 +15,9 @@
   font-style: normal;
   font-weight: 600;
   src: local('DINPro-Bold'), local('DINPro-Bold'), url(../fonts/DINPro-Bold.ttf) format('ttf');
+  src: local('DINPro-Bold'), local('DINPro-Bold'), url(../fonts/DINPro-Bold.eot) format('eot');
+  src: local('DINPro-Bold'), local('DINPro-Bold'), url(../fonts/DINPro-Bold.otf) format('otf');
+  src: local('DINPro-Bold'), local('DINPro-Bold'), url(../fonts/DINPro-Bold.woff) format('woff');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -20,11 +26,24 @@
   font-style: normal;
   font-weight: 600;
   src: local('DINMedium'), local('DINMedium'), url(../fonts/DINMedium.ttf) format('ttf');
+  src: local('DINMedium'), local('DINMedium'), url(../fonts/DINMedium.eot) format('eot');
+  src: local('DINMedium'), local('DINMedium'), url(../fonts/DINMedium.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* latin */
+@font-face {
+  font-family: 'DINRegular';
+  font-style: normal;
+  font-weight: 600;
+  src: local('DINRegular'), local('DINRegular'), url(../fonts/DINRegular.ttf) format('ttf');
+  src: local('DINRegular'), local('DINRegular'), url(../fonts/DINRegular.eot) format('eot');
+  src: local('DINRegular'), local('DINRegular'), url(../fonts/DINRegular.woff) format('woff');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 body {
-	font-family: 'DINPro-Light', sans-serif;
+	font-family: 'DINRegular', sans-serif;
     color: #404142;
     font-size: 16px;
 	letter-spacing: 0.8px;
