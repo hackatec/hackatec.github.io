@@ -314,6 +314,11 @@ a span.ti-linkedin {
 .sponsors {
   background-color: #0071BD;
 }
+.sponsors img{
+    max-width: 80%;
+    margin: 10%;
+    max-height: 250px;
+}
 .sponsors h1,
 .sponsors h2
 {
