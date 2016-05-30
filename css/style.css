@@ -274,7 +274,7 @@ a span.ti-linkedin {
 
 .tickets .incluido ul{
     list-style: outside;
-    /*text-align: left;*/
+    text-align: left;
 } 
 .tickets .incluido li{
     list-style: outside;
@@ -291,6 +291,10 @@ a span.ti-linkedin {
 	font-size: 0.4em;
 }
 
+.hackdash {
+  background-color: #353D45;
+  color: #fff;
+}
 
 .about-us {
   background-color: #EAEAEA;
